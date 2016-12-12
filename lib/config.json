@@ -1,0 +1,14 @@
+{
+  "oAuth": {
+    "clientId": "f987a5a8-6db2-4fa4-953a-7e26778be728",
+    "uri": "https://login.windows.net",
+    "path": "/common/oauth2/token",
+    "resourceUri": "https://analysis.windows.net/powerbi/api"
+  },
+  "powerBi": {
+    "uri": "api.powerbi.com",
+    "port": 443,
+    "path": "/v1.0/myorg/datasets"
+  },
+  "debug": false
+}

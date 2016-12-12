@@ -1,0 +1,25 @@
+{
+  "name": "bi-hapi",
+  "version": "0.0.1",
+  "description": "Rest API to send data to PowerBI based on HAPI",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vgenev/bi-hapi.git"
+  },
+  "keywords": [
+    "powerbi",
+    "hapi",
+    "power-bi"
+  ],
+  "author": "Valentin Genev <vgenev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vgenev/bi-hapi/issues"
+  },
+  "homepage": "https://github.com/vgenev/bi-hapi#readme"
+}
