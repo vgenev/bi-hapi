@@ -1,9 +1,11 @@
 'use strict'
 const fs = require('fs')
-const PowerBiAPI = require('../lib/powerBiAPI')
+const PowerBiService = require(`${__dirname}/../lib/powerBiService`)
+const config = require(`${__dirname}/../lib/real_config`)
 
-let userName = 'saleshub@trinitisoft.onmicrosoft.com'
-let password = 'MashaIMechoka201'
+const userName = config.credentials.username
+const password = config.credentials.password
+
 
 function powerBiSchemaHandler (request, reply) {
   let data = request.payload
@@ -16,7 +18,7 @@ function powerBiSchemaHandler (request, reply) {
 function powerBiDataHandler (request, reply) {
   let schema = require(`${__dirname}/../schemas/${request.payload.schema}.json`)
   let data = request.payload.data
-  let powerBi = new PowerBiAPI(schema, data)
+  let powerBi = new PowerBiService(schema, data)
   powerBi.start(userName, password, (err, count) => {
     if (!err) return
     else return reply(`ERROR! ${err} entries lost`)

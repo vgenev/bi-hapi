@@ -1,6 +1,10 @@
 {
+    "credentials": {
+    "username": "yourPowerBIName",
+    "password": "yourPowerBIPassword"
+  },
   "oAuth": {
-    "clientId": "f987a5a8-6db2-4fa4-953a-7e26778be728",
+    "clientId": "powerBi Client ID from Azure Active Directory", 
     "uri": "https://login.windows.net",
     "path": "/common/oauth2/token",
     "resourceUri": "https://analysis.windows.net/powerbi/api"
@@ -10,5 +14,18 @@
     "port": 443,
     "path": "/v1.0/myorg/datasets"
   },
-  "debug": false
+  "debug": false,
+    "plugins": {
+    "swagger": {
+      "info": {
+        "title": "PowerBI API Documentation",
+        "description": "PowerBI API for POSTing Schemas and Data to PowerBI."
+      },
+      "expanded": "full"
+    }
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8033
+  }
 }

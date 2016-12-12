@@ -21,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/vgenev/bi-hapi/issues"
   },
-  "homepage": "https://github.com/vgenev/bi-hapi#readme"
+  "homepage": "https://github.com/vgenev/bi-hapi#readme",
+  "dependencies": {
+    "good": "^7.1.0",
+    "hapi": "^16.0.1",
+    "hapi-swagger": "^7.5.0",
+    "hoek": "^4.1.0",
+    "inert": "^4.0.3",
+    "node-bi": "^1.2.17",
+    "vision": "^4.1.1"
+  }
 }
