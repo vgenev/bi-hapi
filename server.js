@@ -1,8 +1,8 @@
 'use strict'
 const Hapi = require('hapi')
+const Hoek = require('hoek')
 const router = require(`${__dirname}/route/router`)
 const config = require(`${__dirname}/lib/real_config`)
-const Hoek = require('hoek')
 
 let server = new Hapi.Server()
 
