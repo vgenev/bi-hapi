@@ -2,6 +2,7 @@ const Joi = require('joi')
 const powerBiDataHandler = require(`${__dirname}/../handlers/powerBiHandler`).powerBiDataHandler
 const getSchema = require(`${__dirname}/../handlers/getSchema`)
 const powerBiSchemaHandler = require(`${__dirname}/../handlers/powerBiHandler`).powerBiSchemaHandler
+const dataTypesENUM = ['String', 'Int64', 'Double', 'Boolean', 'Datetime']
 
 module.exports = [
   {
@@ -21,7 +22,7 @@ module.exports = [
             name: Joi.string().required().default('TableName'),
             columns: Joi.array().items(Joi.object().keys({
               name: Joi.string().required().default('ColumnName'),
-              dataType: Joi.string().required().default('PowerBI Schema datatypes'),
+              dataType: Joi.string().valid(dataTypesENUM).required(),
               summarizeBy: Joi.string()
             })).required()
           })).required(),

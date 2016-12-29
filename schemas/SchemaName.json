@@ -1,0 +1,1 @@
+{"name":"SchemaName","tables":[{"name":"TableName","columns":[{"name":"ColumnName","dataType":"String","summarizeBy":"string"}]}],"relationships":[{}]}
