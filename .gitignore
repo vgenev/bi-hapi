@@ -33,6 +33,9 @@ jspm_packages
 typings
 typings.json
 
+# Local resource directory
+schemas
+
 # Optional npm cache directory
 .npm
 
